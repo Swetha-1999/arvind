@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>paps-gaps</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.next {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body style="background-color:beige;">
+
+<center><i><h2>&hearts; Moments that are captured &hearts;</h2></i></center>
+
+<div class="row">
+  <div class="column">
+    <p>Miss you.. Nah!</p>
+    <video src="vid1.mp4" width="350" height="300" poster="pic1.jpg" onclick="this.paused?this.play():this.pause();"/>
+  </div>
+  <div class="column">
+    <p>Will you marry me?!</p>
+    <video src="vid2.mp4" width="350" height="300" poster="pic2.jpg" onclick="this.paused?this.play():this.pause();"/>
+  </div>
+  <div class="column">
+    <p>food partner</p>
+    <video src="vid3.mp4" width="350" height="300" poster="pic3.jpg" onclick="this.paused?this.play():this.pause();"/>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="column">
+    <p>A wave of happiness</p>
+    <video src="vid4.mp4" width="350" height="300" poster="pic4.jpg" onclick="this.paused?this.play():this.pause();"/>
+  </div>
+  <div class="column">
+    <p>Damal damal damal</p>
+    <video src="vid5.mp4" width="350" height="300" poster="pic5.jpg" onclick="this.paused?this.play():this.pause();"/>
+  </div>
+  <div class="column">
+    <p>Late late late</p>
+    <video src="vid6.mp4" width="350" height="300" poster="pic6.jpg" onclick="this.paused?this.play():this.pause();"/>
+  </div>
+</div>
+<br>
+
+
+<a href="gaps2.html" class="previous">&laquo; Previous</a>
+<a href="gaps4.html" class="next">Next &raquo;</a>
+</body>
+</html>

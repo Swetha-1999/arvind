@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>paps-gaps</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.next {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body style="background-color:beige;">
+
+<center><i><h2>&hearts; Moments that are captured &hearts;</h2></i></center>
+
+<div class="row">
+  <div class="column">
+    <p>Blushes</p>
+    <video src="vid7.mp4" width="350" height="300" poster="pic7.jpg" onclick="this.paused?this.play():this.pause();"/>
+  </div>
+  <div class="column">
+    <p>Palar</p>
+    <video src="vid8.mp4" width="350" height="300" poster="pic8.png" onclick="this.paused?this.play():this.pause();"/>
+  </div>
+  <div class="column">
+    <p>My stylist</p>
+    <video src="vid9.mp4" width="350" height="300" poster="pic9.jpg" onclick="this.paused?this.play():this.pause();"/>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="column">
+    <p>Romance in rain</p>
+    <video src="vid10.mp4" width="350" height="300" poster="pic10.jpg" onclick="this.paused?this.play():this.pause();"/>
+  </div>
+  <div class="column">
+    <p>Muah</p>
+    <video src="vid11.mp4" width="350" height="300" poster="pic11.jpg" onclick="this.paused?this.play():this.pause();"/>
+  </div>
+  <div class="column">
+    <p>Eli</p>
+    <video src="vid12.mp4" width="350" height="300" poster="pic12.jpg" onclick="this.paused?this.play():this.pause();"/>
+  </div>
+</div>
+<br>
+
+
+<a href="gaps3.html" class="previous">&laquo; Previous</a>
+<a href="gaps5.html" class="next">Next &raquo;</a>
+</body>
+</html>
